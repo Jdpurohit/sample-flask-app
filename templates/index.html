@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>sample flask app</title> 
+</head>
+ 
+<body>
+    <form action="/" method="post">
+        <input placeholder="Content 1" name="name">
+        <input placeholder="Content 2" name="post">
+        <input type="submit" value="Submit">
+    </form>
+
+    {% for post in posts %}
+    <div>{{ post[1] + ' : ' + post[2] }}</div>
+    {% endfor %}
+
+</body>
+ 
+</html>
